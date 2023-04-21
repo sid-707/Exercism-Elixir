@@ -28,6 +28,12 @@ defmodule SpaceAge do
 
     case planet do
       :mercury -> {:ok, earth_years / @mercury_orbital_period}
+      :venus -> {:ok, earth_years / @venus_orbital_period}
+      :mars -> {:ok, earth_years / @mars_orbital_period}
+      :jupiter -> {:ok, earth_years / @jupiter_orbital_period}
+      :saturn -> {:ok, earth_years / @saturn_orbital_period}
+      :uranus -> {:ok, earth_years / @uranus_orbital_period}
+      :neptune -> {:ok, earth_years / @neptune_orbital_period}
       :earth -> {:ok, earth_years}
       _ -> {:error, "not a planet"}
     end
